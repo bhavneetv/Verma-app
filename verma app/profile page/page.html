@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link href="https://db.onlinewebfonts.com/c/2ec1833774dcf34745c02274f73c07e1?family=Aoki+Regular" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="box">
+        <i class="fa fa-sign-out" aria-hidden="true"
+            style="font-size: 1.5rem; position: absolute; top: 3%; right: 3%; padding-top: 2%; cursor: pointer;"
+            onclick="logout()"> </i>
+
+        <div id="profile_box">
+
+            <div id="profile-img">
+                <i class="fa fa-user" aria-hidden="true" id="user-fafa"> </i>
+                <input type="file" name="" id="input" accept="image/*">
+
+            </div>
+            <h3 id="upload-msg"> Upload Profile Image</h3>
+            <h1 id="user-msg"></h1>
+            <button id="next-btn" type="submit ">Next</button>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="p-box" style="display: none;">
+
+        <div class="banner">
+            <nav id="img">
+
+            </nav>
+
+        </div>
+        <h2 id="user-nme"></h2>
+
+
+        <div id="main">
+
+            <nav id="pr-main">
+                <a href="apps/profile/profile.html"><i class="fa fa-user" aria-hidden="true" ></i></a>
+                <label for="pr-main">Profile</label>
+            </nav>
+            <nav id="passbook-main">
+                <a href="apps/contact/contact.html"><i class="fa fa-address-book" aria-hidden="true"></i></a>
+                <label for="passbook-main">Contacts</label>
+            </nav>
+            <nav id="player-main">
+               <a href="apps/player/player.html"> <i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                <label for="player-main">Video Player</label>
+            </nav>
+            <nav id="player-main">
+               <a href="apps/audio player/audio.html"><i class="fa-solid fa-music"></i></a>
+                <label for="player-main">Audio Player</label>
+            </nav>
+            <nav id="player-main">
+               <a href="apps/text editor/text editor.html"><i class="fa fa-code" aria-hidden="true"></i></a>
+                <label for="player-main">HTML Text Editor</label>
+            </nav>
+            <nav id="player-main">
+               <a href="apps/notes/notes.html"><i class="fa fa-sticky-note-o" aria-hidden="true"></i></a>
+                <label for="player-main">My Notes</label>
+            </nav>
+            <nav id="logout-main">
+
+                <i class="fa fa-sign-out" aria-hidden="true" onclick="logout()"></i>
+                <label for="logout-main">Logout</label>
+            </nav>
+
+
+        </div>
+
+        <footer>
+            <h3>Devloped by: Bhavneet Verma</h3>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/page.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://kit.fontawesome.com/7967a222d3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

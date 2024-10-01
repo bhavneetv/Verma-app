@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="box">
+        <div id="inner">
+
+
+            <!-- login page coding start here -->
+            <nav id="signin" class="animate__animated animate__flipInY animate__fast">
+
+                <h1>Login</h1>
+                <form action="" style="margin-top: 25px;" autocomplete="off">
+                    <input type="text" name="email" id="login-mail" placeholder="Email" required>
+                    <header>
+
+                        <input type="password" name="password" id="login-pass" placeholder="Password" required>
+                        <i class="fa fa-eye" id="eye-open"></i>
+                        <i class="fa fa-eye-slash" aria-hidden="true" id="eye-close"></i>
+                    </header>
+                    <center>
+
+                        <button id="login-btn" type="submit ">Login</button>
+                    </center>
+                </form>
+                <p>Don't have a account? <span id="sign-link">Signup here!</span></p>
+
+  
+
+
+
+
+
+            </nav>
+            <!-- login page coding end here -->
+
+            <!-- sign up page coding start here -->
+            <nav id="signup" style="display:none;" class="animate__animated animate__flipInY animate__fast">
+                <h1>Signup</h1>
+                <form action="" style="margin-top: 25px;" autocomplete="off" id="sigup-form">
+
+                    
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="mail" id="mail" placeholder="Email">
+                    <input type="number" name="phone" id="phone" placeholder="Mobile no.">
+                    
+                    
+                    <header>
+                    <input type="password" name="password" id="pass" placeholder="Password">
+                    
+                        <i class="fa fa-eye" id="eye-open"></i>
+                        <i class="fa fa-eye-slash" aria-hidden="true" id="eye-close"></i>
+                        
+                    
+                    </header>
+                    <center>
+
+                        <button id="signup-btn" type="submit "> Signup</button>
+                        <div id="mai" style="display: none;">
+                            <p> Email Already exist</p>
+                        </div>
+                    </center>
+                </form>
+                <p>Already have an account? <span id="login-llk">Login here!</span></p>
+
+                <!-- sign up page coding ends here -->
+            </nav>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+    <script src="https://kit.fontawesome.com/7967a222d3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

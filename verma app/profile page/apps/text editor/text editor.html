@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://db.onlinewebfonts.com/c/2ec1833774dcf34745c02274f73c07e1?family=Aoki+Regular" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="../../animation main/animate.css"> -->
+    
+</head>
+
+<body id="body">
+    <div class="top">
+        <h1 class="top-text">Text Editor </h1>
+        <div id="mode-p">
+
+            <span id="mode">
+                <i class="fa fa-moon-o" aria-hidden="true" id="darkx" ></i>
+                <i class="fa-solid fa-sun" id="light"style="display: none;" ></i>
+            </span>
+        </div>
+    </div>
+
+    <fieldset id="input" class="animate__animated animate__SlideInLeft">
+        <legend >Enter Code Here</legend>
+        <textarea name="" id="code">
+<!DOCTYPE>
+ <html>           
+ <head>
+ <title>
+
+      document
+
+</title>
+</head>
+
+
+                
+ <body>
+
+ 
+                    
+</body>               
+</html>
+                
+            </textarea>
+        </fieldset>
+        
+        <div id="out" class="animate__animated animate__SlideInLeft" style="display: none;">
+
+            
+            <fieldset id="output" class="animate__animated animate__SlideInLeft" style="display: block;">
+                <legend >Output Code Here</legend>
+                
+                <div class="output-code" id="output-codes"></div>
+            </fieldset>
+        </div>
+            <span id="btns">
+                
+                <center><button class="btn" id="save-btn"> <i class="fas fa-save"></i> Save</button></center>
+                <center><button class="btn" id="run-btn" onclick="run()"><i class="fas fa-running"></i> Run Code!!</button></center>
+                <center><button class="btn" id="back-btn" onclick="back()"> <i class="fas fa-arrow-circle-left"></i> </button></center>
+            </span>
+            
+
+    <script src="https://kit.fontawesome.com/7967a222d3.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <div id="up" style="display: none;">
+
+            <div id="box">
+              
+
+                <div id="profile_box">
+
+                    <div id="profile-img">
+                        <i class="fa fa-upload" aria-hidden="true" id="user-fafa"> </i>
+                        <!-- <input type="file" name="" id="input" accept="video/*"> -->
+
+                    </div>
+                    <h3 id="upload-msg">Add Your First Video To Play</h3>
+
+                    <!-- <h1 id="user-msg">Video name</h1> -->
+                    <input type="text" name="" id="video-name-first" placeholder="Enter Video Name">
+                    <input type="text" name="" id="video_link-first" placeholder="Enter Video Link">
+                    <button id="next-btn" type="submit ">Play</button>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <!-- code to player -->
+    <div id="main-player" style="display: block;">
+
+
+        <div id="main_player">
+            <nav id="player">
+                <video id="video-p">
+                    <source id="v_scr" src="demo.mp4">
+                    </source>
+                </video>
+                <div id="all_tool">
+
+                    <div id="progress_bar">
+                        <nav id="progress-bar"></nav>
+                    </div>
+
+                    <div id="tool">
+                        <div class="time-box">
+
+                            <p id="time">00:00/00:00</p>
+                        </div>
+                        <div class="play-sett">
+
+                            <nav id="back"><i class="fa-solid fa-backward"></i></nav>
+                            <nav id="play"><i class="fa-solid fa-play"></i></nav>
+                            <nav id="pause"><i class="fa-solid fa-pause"></i></nav>
+                            <nav id="skip"><i class="fa-solid fa-forward"></i></nav>
+                        </div>
+                        <nav class="other-sett">
+                            <span id="r"><input type="range" name="" id="input-range" min="0.02 1" max="1"
+                                    step="0.01"></span>
+                            <span id="volx">
+
+                                <i class="fa fa-volume-up" aria-hidden="true" id="vol-full" style="display: none;"></i>
+
+                                <i class="fa fa-volume-down" aria-hidden="true " id="vol-min"
+                                    style="display: none;"></i>
+                                <i class="fas fa-volume-mute" id="vol-mute" style="display: none;"></i>
+                            </span>
+                            <span id="p" ><input type="range" name="" id="input-range-speed" min="0.5 " max="2"
+                                step="0.25" style="display: block;"></span>
+                                <i class="fa fa-tachometer" aria-hidden="true" id="speed"></i>
+
+                            <i class="fa-solid fa-expand" id="full-screen" style="margin-right: 9px;"></i>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
+            <nav id="playlist">
+                <h2>Add Video</h2>
+                <form action="">
+                    <center>
+
+                        <!-- <input type="file" name="" id="video-inp"
+                            style="position: absolute; width: 250px; margin-left: 6px ;opacity: 0; cursor: pointer;">
+                        <button type="button">Play Local Video</button> -->
+                        <input type="text" name="" id="video-name" placeholder="Enter Video Name">
+                        <input type="text" name="" id="video_link" placeholder="Enter Video Link">
+                        <button type="submit" id="video_sub" style=" margin-top: 10px;">Play</button>
+                    </center>
+                </form>
+                <hr>
+                <center>
+                    <h2>Recently Played</h2>
+                    <input type="search" name="" id="video-search" placeholder="Search Video Here">
+
+                    <nav class="recent-nav" id="all_c">
+
+
+
+                    </nav>
+                </center>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/player.js"></script>
+    <script src="https://kit.fontawesome.com/7967a222d3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
